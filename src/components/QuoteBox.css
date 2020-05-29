@@ -46,6 +46,7 @@
   height: 48px;
   width: 48px;
   border: none;
+  background-color: hsl(220, 12%, 95%);
 }
 
 #tweet-quote:hover {
