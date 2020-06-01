@@ -1,4 +1,4 @@
-#quote-box {
+.quote-box {
   margin: 28vh 5px;
   border-radius: 5px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -7,30 +7,30 @@
 }
 
 @media only screen and (min-width: 767px) {
-  #quote-box {
+  .quote-box {
     max-width: 720px;
     margin: 38vh auto;
   }
 }
 
-#quote-container {
+.quote-container {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
-#text {
+.text {
   align-self: center;
   padding: 12px 20px;
 }
 
-#author {
+.author {
   align-self: flex-end;
   padding: 12px 20px;
 }
 
-#btn-container {
+.btn-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,7 +40,7 @@
   border-bottom-right-radius: 5px;
 }
 
-#tweet-quote {
+.tweet-quote {
   align-self: flex-start;
   border-radius: 5px;
   height: 48px;
@@ -49,23 +49,23 @@
   background-color: hsl(220, 12%, 95%);
 }
 
-#tweet-quote:hover {
+.tweet-quote:hover {
   cursor: pointer;
   background-color: rgb(89, 142, 240);
 }
 
-#tweet-quote > a {
+.tweet-quote > a {
   color: rgb(89, 142, 240);
   font-size: 24px;
   padding: 8px 13px;
 }
 
-#tweet-quote > a:hover {
+.tweet-quote > a:hover {
   cursor: pointer;
   color: white;
 }
 
-#new-quote {
+.new-quote {
   align-self: flex-end;
   padding: 12px 10px;
   border-radius: 5px;
@@ -78,7 +78,7 @@
   border: none;
 }
 
-#new-quote:hover {
+.new-quote:hover {
   cursor: pointer;
   background-color: white;
   color: rgb(89, 142, 240);

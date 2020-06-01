@@ -7,7 +7,7 @@ class QuoteBox extends React.Component {
     this.state = {
       quote: '',
       author: '',
-      tweetURL: ""
+      tweetURL: ''
     } 
 
     // Bind Handles and Functions
@@ -57,15 +57,25 @@ class QuoteBox extends React.Component {
   render() {
     const { quote, author, tweetURL } = this.state;
     return (
-      <div id="quote-box">
-        <div id="quote-container">
-          <p id="text">{"\""}{quote}{"\""}</p>
-          <p id="author">-{author}</p>
+      <div id="quote-box" className="quote-box">
+        <div id="quote-container" className="quote-container">
+          <p id="text" className="text">{'"'}{quote}{'"'}</p>
+          <p id="author" className="author">-{author}</p>
         </div>
-        <div id="btn-container">
-          <button id="tweet-quote"><a href={tweetURL}><i className="fa fa-twitter" aria-hidden="true"></i>
-</a></button>
-          <button id="new-quote" onClick={this.handleNewQuote}>New Quote</button>
+        <div id="btn-container" className="btn-container">
+          <button id="tweet-quote" className="tweet-quote">
+            <a href={tweetURL}>
+              <i className="fa fa-twitter" aria-hidden="true">
+
+              </i>
+            </a>
+          </button>
+          <button 
+            id="new-quote" 
+            className="new-quote" 
+            onClick={this.handleNewQuote}
+            >New Quote
+          </button>
         </div>
       </div>
     )
