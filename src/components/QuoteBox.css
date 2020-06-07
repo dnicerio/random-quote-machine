@@ -1,5 +1,5 @@
 .quote-box {
-  margin: 28vh 5px;
+  margin: 28vh 6px;
   border-radius: 5px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   border-top: 6px solid rgb(184, 95, 236);
@@ -22,22 +22,23 @@
 
 .text {
   align-self: center;
-  padding: 12px 20px;
+  padding: 12px 24px;
 }
 
 .author {
   align-self: flex-end;
-  padding: 12px 20px;
+  padding: 12px 24px;
 }
 
 .btn-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 12px 20px;
+  padding: 12px 24px;
   background-color: hsl(220, 12%, 95%);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 72px;
 }
 
 .tweet-quote {
@@ -47,6 +48,7 @@
   width: 48px;
   border: none;
   background-color: hsl(220, 12%, 95%);
+  transition: all 0.2s ease-in-out;
 }
 
 .tweet-quote:hover {
@@ -58,6 +60,7 @@
   color: rgb(89, 142, 240);
   font-size: 24px;
   padding: 8px 13px;
+  transition: all 0.2s ease-in-out;
 }
 
 .tweet-quote > a:hover {
@@ -67,15 +70,12 @@
 
 .new-quote {
   align-self: flex-end;
-  padding: 12px 10px;
+  padding: 12px;
   border-radius: 5px;
-  font-size: 1rem;
-  line-height: 1.4;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
   background-color: rgb(89, 142, 240);
   color: white;
   border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .new-quote:hover {
@@ -83,4 +83,5 @@
   background-color: white;
   color: rgb(89, 142, 240);
   border: 1px solid rgb(89, 142, 240);
+  padding: 11px;
 }
